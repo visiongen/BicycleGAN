@@ -6,7 +6,7 @@ E_PATH='./pretrained_models/edges2shoes_net_E.pth'
 
 # dataset
 CLASS='edges2shoes'
-DIRECTION='AtoB' # from domain A to domain B
+DIRECTION='BtoA' # from domain A to domain B
 LOAD_SIZE=256 # scale images to this size
 CROP_SIZE=256 # then crop to this size
 INPUT_NC=1  # number of channels in the input image
@@ -18,7 +18,7 @@ NUM_SAMPLES=10 # number of samples per input images
 
 # command
 CUDA_VISIBLE_DEVICES=${GPU_ID} python ./test.py \
-  --dataroot ./datasets/${CLASS} \
+  --dataroot '../drive/MyDrive/Final Project/data/bawahan/datasets' \
   --results_dir ${RESULTS_DIR} \
   --checkpoints_dir ./pretrained_models/ \
   --name ${CLASS} \
