@@ -20,7 +20,7 @@ NAME=${CLASS}_${MODEL}
 # command
 CUDA_VISIBLE_DEVICES=${GPU_ID} python ./train.py \
   --display_id ${DISPLAY_ID} \
-  --dataroot '../drive/MyDrive/Final Project/data/bawahan' \
+  --dataroot '../drive/MyDrive/Final Project/data/bawahan/result bawahan AB' \
   --name ${NAME} \
   --model ${MODEL} \
   --direction ${DIRECTION} \
