@@ -4,7 +4,7 @@ MODEL='bicycle_gan'
 CLASS='edges2shoes'  # facades, day2night, edges2shoes, edges2handbags, maps
 NZ=8
 NO_FLIP='--no_flip'
-DIRECTION='AtoB'
+DIRECTION='BtoA'
 LOAD_SIZE=256
 CROP_SIZE=256
 INPUT_NC=1
@@ -20,7 +20,7 @@ NAME=${CLASS}_${MODEL}
 # command
 CUDA_VISIBLE_DEVICES=${GPU_ID} python ./train.py \
   --display_id ${DISPLAY_ID} \
-  --dataroot ./datasets/${CLASS} \
+  --dataroot '../drive/MyDrive/Final Project/data/bawahan' \
   --name ${NAME} \
   --model ${MODEL} \
   --direction ${DIRECTION} \
